@@ -5,6 +5,7 @@ public class TestGenerics {
         for(E element: elements){
             System.out.println(element);
         }
+        System.out.println();
 
     }
 }
