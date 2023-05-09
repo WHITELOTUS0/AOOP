@@ -14,6 +14,8 @@ public class MyGen<T> {
         System.out.println(obj.getNumber());
         MyGen<Double> obj2 = new MyGen<Double>(2.5);
         System.out.println(obj2.getNumber());
+        MyGen<Float> obj3 = new MyGen<Float>(2.5f);
+        System.out.println(obj3.getNumber());
 
     }
     
