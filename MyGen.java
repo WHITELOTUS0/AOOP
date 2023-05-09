@@ -11,6 +11,7 @@ public class MyGen<T> {
 
     public static void main(String[] args) {
         MyGen<Integer> obj= new MyGen<Integer>(3);
+        System.out.println(obj.getNumber());
 
     }
     
