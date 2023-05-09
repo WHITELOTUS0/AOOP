@@ -8,4 +8,12 @@ public class TestGenerics {
         System.out.println();
 
     }
+
+    public static void main(String[] args) {
+        Integer[] arr = {1,2,3,4,5};
+        Character[] chararr = {'G', 'L','O', 'R', 'R','Y'};
+        TestGenerics t = new TestGenerics();
+        t.printArray(arr);
+        t.printArray(chararr);
+    }
 }
