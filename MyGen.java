@@ -12,7 +12,7 @@ public class MyGen<T> {
     public static void main(String[] args) {
         MyGen<Integer> obj= new MyGen<Integer>(3);
         System.out.println(obj.getNumber());
-        MyGen<Float> obj2 = new MyGen<Float>(2.5);
+        MyGen<Double> obj2 = new MyGen<Double>(2.5);
         System.out.println(obj2.getNumber());
 
     }
