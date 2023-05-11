@@ -8,6 +8,7 @@ public class Student{
         map.put("Shariff", 22);
 
         System.out.println(map.get("Glorry"));
+        //map
         
 
     }
