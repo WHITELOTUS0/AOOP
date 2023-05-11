@@ -9,6 +9,7 @@ public class TestGeneric2 {
         System.out.println(s);
         int n = test.m(5);
         System.out.println(n);
+        //generic
         
     }
     
