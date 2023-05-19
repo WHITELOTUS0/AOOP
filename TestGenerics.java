@@ -17,3 +17,4 @@ public class TestGenerics {
         t.printArray(chararr);
     }
 }
+//GEneric
