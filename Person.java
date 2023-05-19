@@ -33,7 +33,7 @@ class Person implements Externalizable {
     }
 }
 
-public class SerializationExample {
+class SerializationExample {
     public static void main(String[] args) {
         String filename = "person.ser";
         
