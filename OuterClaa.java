@@ -1,5 +1,5 @@
 public class OuterClaa {
     public class InnerClass{
-        //nested classes
+        //nested classes in java
     }
 }
