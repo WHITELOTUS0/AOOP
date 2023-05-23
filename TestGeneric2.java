@@ -10,7 +10,7 @@ public class TestGeneric2 {
         int n = test.m(5);
         System.out.println(n);
         //generic
-        //class
+        
         
     }
     
