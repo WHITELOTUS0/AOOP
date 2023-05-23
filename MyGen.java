@@ -1,4 +1,4 @@
-//Generic Class programming in java
+//Generic Class programming 
 public class MyGen<T> {
     T number;
     MyGen(T number){
