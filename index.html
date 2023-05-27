@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+    
+    .signup-button {
+      margin-left: auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .signup-button:hover {
+      background-color: #45a049;
+    }
+    
+    .signup-form {
+      display: none;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+    }
+    
+    .signup-form.active {
+      display: block;
+    }
+    
+    .signup-form h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #333333;
+    }
+    
+    .signup-form input[type="text"],
+    .signup-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    
+    .signup-form button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .signup-form button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .login-link {
+      margin-top: 10px;
+      text-align: center;
+      color: #666666;
+    }
+    
+    .login-link a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button class="signup-button" onclick="toggleSignupForm()">Sign Up</button>
+    </div>
+    <form id="signupForm" class="signup-form">
+      <h2>Sign Up</h2>
+      <!-- Add your sign up form fields here -->
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button type="submit">Sign Up</button>
+      <p class="login-link">Already have an account? <a href="#" onclick="toggleSignupForm()">Log In</a></p>
+    </form>
+  </div>
+
+  <script>
+    function toggleSignupForm() {
+      var signupForm = document.getElementById("signupForm");
+      signupForm.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
