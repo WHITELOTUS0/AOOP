@@ -18,7 +18,7 @@
     <script>
       function generateDiv() {
         return `
-            <div id="house" class="card column-gap-3 mt-3 " style="width: 18rem">
+            <div id="house" class="card column-gap-3 mt-3 " style="width: 20rem">
                 <img src="https://picsum.photos/200" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -54,6 +54,21 @@
         padding: 0;
         background-color: #f2f2f2;
       }
+      .card-column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-right: -0.5rem;
+      }
+
+      .card-column .card {
+        flex: 0 0 calc(33.33% - 0.5rem); /* Adjust the width as desired */
+        margin-bottom: 1rem;
+        margin-right: 0.5rem;
+      }
+      .card-column .card:hover {
+        transform: scale(1.05); /* Apply zoom effect on hover */
+      }
     </style>
     <title>Document</title>
   </head>
@@ -65,8 +80,8 @@
         <button class="btn btn-success" type="submit">Login</button>
       </div>
     </nav>
-    <div class="col-sm-4">
-      <div id="container"></div>
-    </div>
+   
+      <div id="container" class="m-3 card-column" ></div>
+    
   </body>
 </html>
