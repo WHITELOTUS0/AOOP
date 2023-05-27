@@ -16,12 +16,12 @@
       crossorigin="anonymous"
     ></script>
     <script>
-        const houseDiv = document.getElementById('house');
+      const houseDiv = document.getElementById("house");
 
-        for (let i = 0; i < 30; i++) {
-          const copyDiv = houseDiv.cloneNode(true);
-          document.body.appendChild(copyDiv);
-        }
+      for (let i = 0; i < 30; i++) {
+        const copyDiv = houseDiv.cloneNode(true);
+        document.body.appendChild(copyDiv);
+      }
     </script>
     <style>
       body {
@@ -41,18 +41,17 @@
         <button class="btn btn-success" type="submit">Login</button>
       </div>
     </nav>
-    
-      <div class="card column-gap-3 mt-3" id="house" style="width: 18rem">
-        <img src="https://picsum.photos/200" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-danger">Buy</a>
-        </div>
+
+    <div id="house" class="card column-gap-3 mt-3" style="width: 18rem">
+      <img src="https://picsum.photos/200" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-danger">Buy</a>
       </div>
-    
+    </div>
   </body>
 </html>
