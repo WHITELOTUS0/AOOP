@@ -16,26 +16,12 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      // Get the reference to the original div element
-      var originalDiv = document.getElementById("property");
+        const houseDiv = document.getElementById('house');
 
-      // Get the parent element of the original div
-      var parentElement = originalDiv.parentNode;
-
-      // Define the number of copies you want to create
-      var numCopies = 5;
-
-      // Loop to create copies of the original div
-      for (var i = 0; i < numCopies; i++) {
-        // Create a new div element
-        var newDiv = document.createElement("properrty");
-
-        // Set the same content as the original div
-        newDiv.innerHTML = originalDiv.innerHTML;
-
-        // Append the new div to the parent element
-        parentElement.appendChild(newDiv);
-      }
+        for (let i = 0; i < 30; i++) {
+          const copyDiv = houseDiv.cloneNode(true);
+          document.body.appendChild(copyDiv);
+        }
     </script>
     <style>
       body {
@@ -56,7 +42,7 @@
       </div>
     </nav>
     
-      <div class="card column-gap-3 mt-3" id="property" style="width: 18rem">
+      <div class="card column-gap-3 mt-3" id="house" style="width: 18rem">
         <img src="https://picsum.photos/200" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
