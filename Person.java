@@ -46,7 +46,7 @@ class SerializationExample {
             e.printStackTrace();
         }
         
-        // Deserialization
+        
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename))) {
             Person person = (Person) ois.readObject();
             System.out.println("Object deserialized: " + person);
