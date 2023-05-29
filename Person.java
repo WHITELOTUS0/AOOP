@@ -22,7 +22,7 @@ class Person implements Externalizable {
     
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
-        /
+        
         name = (String) in.readObject();
         age = in.readInt();
     }
