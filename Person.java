@@ -37,7 +37,7 @@ class SerializationExample {
     public static void main(String[] args) {
         String filename = "person.ser";
         
-        // Serialization
+        
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filename))) {
             Person person = new Person("John Doe", 30);
             oos.writeObject(person);
