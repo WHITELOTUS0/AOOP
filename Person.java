@@ -55,3 +55,6 @@ class SerializationExample {
         }
     }
 }
+
+grep -r "where did I learn this?" lecture_notes/
+
