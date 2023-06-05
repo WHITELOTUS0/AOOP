@@ -53,8 +53,5 @@ class SerializationExample {
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-    }
-}
 
-grep -r "where did I learn this?" lecture_notes/
 
